@@ -8,4 +8,6 @@
 #import <React/RCTBridgeModule.h>
 
 @interface RCT_EXTERN_MODULE(RNSampleLibModule, NSObject)
+RCT_EXTERN_METHOD(test:(RCTPromiseResolveBlock)success
+                  reject:(RCTPromiseRejectBlock)reject)
 @end

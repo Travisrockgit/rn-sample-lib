@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06F3FA6E27481886007176E2 /* libmathvec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F3FA6D27481886007176E2 /* libmathvec.a */; };
 		FA4F9FE82512AA42002DB4D5 /* RNSampleLibModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F9FE72512AA42002DB4D5 /* RNSampleLibModule.swift */; };
 		FA4F9FEB2512ACC2002DB4D5 /* RNSampleLibModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4F9FEA2512ACC2002DB4D5 /* RNSampleLibModule.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06F3FA6D27481886007176E2 /* libmathvec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmathvec.a; sourceTree = "<group>"; };
+		06F3FA7027481AB6007176E2 /* mathvec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mathvec.h; sourceTree = "<group>"; };
 		FA0EFF60236CC8FB00069FA8 /* libRNSampleLibModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSampleLibModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4F9FE62512AA41002DB4D5 /* RNSampleLibModule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNSampleLibModule-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA4F9FE72512AA42002DB4D5 /* RNSampleLibModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNSampleLibModule.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F3FA6E27481886007176E2 /* libmathvec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,8 @@
 		FA0EFF57236CC8FB00069FA8 = {
 			isa = PBXGroup;
 			children = (
+				06F3FA7027481AB6007176E2 /* mathvec.h */,
+				06F3FA6D27481886007176E2 /* libmathvec.a */,
 				FA4F9FE62512AA41002DB4D5 /* RNSampleLibModule-Bridging-Header.h */,
 				FA4F9FEA2512ACC2002DB4D5 /* RNSampleLibModule.m */,
 				FA4F9FE72512AA42002DB4D5 /* RNSampleLibModule.swift */,
@@ -86,7 +92,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1240;
-				ORGANIZATIONNAME = "Travis";
+				ORGANIZATIONNAME = Travis;
 				TargetAttributes = {
 					FA0EFF5F236CC8FB00069FA8 = {
 						CreatedOnToolsVersion = 11.1;
@@ -253,6 +259,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +287,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
