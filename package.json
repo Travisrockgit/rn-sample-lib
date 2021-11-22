@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "something something",
   "homepage": "https://github.com/Travisrockgit/rn-sample-lib",
-  "main": "lib/index.js",
+  "main": "src/index.tsx",
   "types": "lib/index.d.ts",
   "author": "Travis <travis.shen@rockfordcorp.com>",
   "license": "MIT",
